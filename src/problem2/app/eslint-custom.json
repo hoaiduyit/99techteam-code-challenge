@@ -1,0 +1,79 @@
+{
+  "rules": {
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "external",
+          "builtin",
+          "internal",
+          ["parent", "sibling", "index"],
+          "object",
+          "type",
+          "unknown"
+        ],
+        "pathGroups": [{
+          "pattern": "@dashboard/**",
+          "group": "internal"
+        }],
+        "pathGroupsExcludedImportTypes": ["builtin"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "@typescript-eslint/quotes": ["error", "double"],
+    "quotes": "off",
+    "linebreak-style": ["off", "windows"],
+    "no-tabs": "off",
+
+    "@typescript-eslint/indent": ["error", 2],
+    "indent": "off",
+
+    "func-names": "off",
+    "consistent-return": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "no-console": ["warn", {
+      "allow": ["warn", "error", "info", "time", "timeEnd"]
+    }],
+    "no-underscore-dangle": "off",
+    "no-bitwise": "off",
+    "no-template-curly-in-string": "off",
+    "no-param-reassign": ["error", {
+      "props": true,
+      "ignorePropertyModificationsForRegex": ["^ev", "^state", "^obj"]
+    }],
+
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", {
+      "args": "all",
+      "argsIgnorePattern": "^_"
+    }],
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-ts-comment": ["error", {
+      "ts-ignore": "allow-with-description"
+    }],
+
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "react/function-component-definition": ["off"],
+    "react/jsx-no-useless-fragment": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/no-danger": "off",
+
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "max-len": "off",
+    "no-plusplus": "off"
+  }
+}
